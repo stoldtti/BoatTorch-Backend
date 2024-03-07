@@ -1,0 +1,48 @@
+
+
+// case 'LOGIN','STATUS': ExLogin(tAccessDomain);   // Login --> weiterleitung nach Home
+// case 'HOME'          : ExHome();                 // Home (after login)
+// case 'DBINFO'        : ExDbInfo();               // sub ExInfo als XML
+// case 'FILEINFO'      : ExFileInfo();             // File-Info als XML
+// case 'HELP'          : ExHelp();                 // HTML-Hilfe mit Beispielen
+
+case 'TABLE'         : ExTable();                // Tabelle ausgeben 
+    HOW TO DO GENERAL PARAMS FOR FIELD NAMES
+
+case 'TABLES'        : ExTables();               // Tabellen ausgeben
+    NEEDS DESCRIPTION 
+case 'READ'          : ExTable(1);               // Einen Datensatz ausgeben
+    NEEDS DESCRIPTIONS AND PARAMS
+
+case 'WRITE'         : ExWrite();                // Einen Datensatz schreiben
+    MORE THAN JUST FILE PARAMS
+
+case 'INSERT'        : ExWrite(y);               // Einen Datensatz einfügen
+    NEEDS DESCRIPTION
+case 'PARAM'         : ExParameter()             // Parameter ausgeben
+    NEEDS DESCRIPTION
+// case 'FILE'          : ExFile();                 // PDF-Datei ausgeben / Beliebige Datei ausgeben
+// case 'LOGOUT'        : ExLogout();               // Logout
+case 'TEXT'          : ExText();                 // Hole internen Text aus Datenbank
+    NEEDS DESCRIPTION and PARAMS
+case 'INI2JSON'      : ExIni2Json();             // Hole Ini-DAtei aus internen Text aus Datenbank und übertrage als JSon...
+    NEEDS DESCRIPTION AND PARAMS
+// case 'DIR'           : ExDir();                  // GetDirectory
+case 'REG'           : ExReg();                  // Registry Entry
+    NEEDS DESCRIPTION
+// case 'UPLOAD'        : ExUpload();               // Upload File
+
+// No Login required
+// case 'IMAGE'         : ExImage();                // Logo
+// case 'INFO'          : ExInfo();                 // Info (ohne Login)
+// case 'FAVICON.ICO'   : ExImage('favicon.ico');   // Logo
+
+case 'USER'          : ExUser();                 // Current User
+    NEEDS DESCRIPTION
+
+// case 'CFG'           : ExCfg();                  // Settings from soa_Values.cfg
+
+case 'MYIP'          : ExGetIP();                // Return IP-Address of requester
+    HAD TO ADD OWN DESCRIPTION
+
+// case 'TEST'          : ExTest();                 // Test
